@@ -1,0 +1,67 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 20,
+        "width": 20
+    },
+    "display": "Random Colors",
+    "edit_mode_image": "//s3.amazonaws.com/appforest_uf/f1524399445522x504510972648859000/palette.png",
+    "fields": {
+        "AAD": {
+            "caption": "Number of colors to generate",
+            "default_val": 3,
+            "doc": "Number of colors to generate",
+            "editor": "DynamicValue",
+            "name": "num_colors",
+            "rank": 0,
+            "value": "number"
+        },
+        "AAF": {
+            "caption": "Hue",
+            "doc": "Hue to generate around",
+            "editor": "Dropdown",
+            "name": "hue",
+            "optional": true,
+            "options": "Red,Orange,Yellow,Green,Blue,Purple,Pink,Monochrome",
+            "rank": 1
+        },
+        "AAG": {
+            "caption": "Luminosity",
+            "doc": "Luminosity type",
+            "editor": "Dropdown",
+            "name": "luminosity",
+            "optional": true,
+            "options": "Bright,Light,Dark",
+            "rank": 2
+        },
+        "AAH": {
+            "caption": "Seed",
+            "doc": "Setting \"Seed\" to a specific text string will generate the same colors each time",
+            "editor": "DynamicValue",
+            "name": "seed",
+            "optional": true,
+            "rank": 3,
+            "value": "text"
+        },
+        "AAI": {
+            "caption": "Setting \"Seed\" to a specific text string will generate the same colors each time",
+            "editor": "Label",
+            "name": "seed_info",
+            "rank": 4
+        }
+    },
+    "icon": "ion-ios-color-filter-outline",
+    "states": {
+        "AAE": {
+            "caption": "Color",
+            "doc": "List of colors generated",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "color",
+            "value": "text"
+        }
+    }
+}
